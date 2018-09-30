@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package collectionstest;
+package ListTests;
 
 import java.util.*;
 
@@ -11,7 +11,7 @@ import java.util.*;
  *
  * @author inbox_bv8awe9
  */
-public class CollectionsTest {
+public class ListTest {
 
     /**
      * @param args the command line arguments
