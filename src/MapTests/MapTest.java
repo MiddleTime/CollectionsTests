@@ -23,5 +23,14 @@ public class MapTest {
         //пример того, что в map не может быть дублей ключа.
         map.put(3, "это цифра ЧЕТЫРЕЕ");
         System.out.println(map);
+        
+        for (Map.Entry<Integer, String> entry: map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+        
+        // тоже самое - обход map по новому с испльзованием 8 java
+        map.entrySet().forEach((entry) -> {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        });
     }
 }
