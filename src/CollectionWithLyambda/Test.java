@@ -53,6 +53,11 @@ public class Test {
         Arrays.stream(array).forEach(System.out::println);
         list.stream().forEach(System.out::println);   
         
+        //reduce  - уменьшить или свернуть коллекцию
+        int summaArray = Arrays.stream(array).reduce((counter, a) -> counter+a).getAsInt();
+        int summaList = list.stream().reduce((counter, a) -> counter *a).get();
+        System.out.println("summa array = " + summaArray);
+        System.out.println("mult list = " + summaList);
     }
     
     private static void fillList(List<Integer> list) {
