@@ -22,14 +22,14 @@ public class ListTest {
         List<Integer> linkedList = new LinkedList<>();
         List<Integer> arrayList = new ArrayList<>();
 
-        measureTime(arrayList);
-        measureTime(linkedList);
+        measureTime(arrayList, "arraylist");
+        measureTime(linkedList, "linkedList");
     }
 
-    private static void measureTime(List<Integer> list) {
+    private static void measureTime(List<Integer> list, String decs) {
         long start = System.currentTimeMillis();
         
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 1000000; i++) {
             //list.add(i);  //быстре для ArrayList 
             list.add(0, i); //быстрее для LIckedList
             
@@ -40,7 +40,7 @@ public class ListTest {
 //        }
         
         long end = System.currentTimeMillis();
-        System.out.println("diff " + (end - start));
+        System.out.println(decs + " diff " + (end - start));
         System.out.println("");
     }
 }
