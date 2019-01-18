@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class TestMeMassive {
     public static void main(String[] args) {
         int[] x = new int[10];
-        for (int i = 0; i <= 10; i++) {  // будет ошибка, которую легко решит В  ArayList
+        for (int i = 0; i <= 10; i++) {  // будет ошибка, которую легко решит В  ArayList в
             x[i] = i;
             
         }
