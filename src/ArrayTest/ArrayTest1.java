@@ -48,8 +48,12 @@ public class ArrayTest1 {
         System.out.println(arrayList);
         
         //преимущество полиморфизма. Только потом перенести в него элементы из Arralist
-        arrayList = new LinkedList<>();
-        System.out.println(arrayList);
+        List list = new LinkedList<>();
+        for (Integer x : arrayList) {
+            list.add(x);
+        }
+        
+        System.out.println(list);
         
     }
 }
