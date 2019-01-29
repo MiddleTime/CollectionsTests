@@ -11,30 +11,77 @@ import java.util.*;
  *
  * @author inbox_bv8awe9
  */
-public class SetTest {
+public class SetTest0 {
     public static void main(String[] args) {
         //множества. Обеспечивается уникальность, не может быть двух одинаковых объектов
         Set<String> hashSet = new HashSet<>();
         Set<String> linkedHashSet = new LinkedHashSet<>();
-        Set<String> treeSet = new TreeSet<>();//поддерживается упорядочивание
+        Set<String> treeSet = new TreeSet<>();
+        
+        
+        
+         
+        
+        
+        
+        
+        
+        
+        
         
         hashSet.add("Bob");
         hashSet.add("lisa");
         hashSet.add("German");
-        hashSet.add("Bob");  //для примера того, что дублей нет.
+        hashSet.add("Bob");  
         hashSet.add("Ivan");
         
-//        for (String name : hashSet) {
-//            System.out.println(name);
-//        }
-        //такой же цикла только java 8
-        hashSet.forEach((name) -> {
+        
+            
+        
+        
+        
+        
+        for (String name : hashSet) {
             System.out.println(name);
-        });
+        }
+        //такой же цикла только java 8
+//        hashSet.forEach((name) -> {
+//            System.out.println(name);
+//        });
      
+
+
+
+
+
+
+
+
+
+
+
+
+
         System.out.println("\n"+hashSet.contains("Bob"));  //очень быстро работает если HashSet
         System.out.println(hashSet.isEmpty());
         System.out.println(hashSet );
+        
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         Set<Integer> set1 = new HashSet<>();
@@ -52,21 +99,63 @@ public class SetTest {
         set2.add(7);
         set2.add(8);
         set2.add(9);
+        
+        
+        
         //union - объединение множеств
         Set<Integer> setUnion = new HashSet<>(set1);
         setUnion.addAll(set2);
         System.out.println(setUnion);
+        
+        
+        
+              
+        
+        
+        
+        
+        
+        
+        
+        
         
         //intersection - переcечение множеств
         Set<Integer> setIntersection = new HashSet<>(set1);
         setIntersection.retainAll(set2);
         System.out.println(setIntersection);
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         //difference - разность множеств
         Set<Integer> setDifference1 = new HashSet<>(set1);
         setDifference1.removeAll(set2);
         System.out.println(setDifference1);
   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         //difference - разность множеств
         Set<Integer> setDifference2 = new HashSet<>(set2);
         setDifference2.removeAll(set1);
